@@ -1,0 +1,65 @@
+name: med_app
+description: Chronic Care Companion App
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.2 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.5
+  ionicons: ^0.2.2
+  flutter_slidable: ^1.2.0
+  hive: ^2.2.3
+  google_fonts: ^4.0.4
+  hive_flutter: ^1.1.0
+  flutter_heatmap_calendar: ^1.0.5
+  flutter_bloc: ^7.0.0
+  equatable: ^2.0.0
+  flutter_native_splash: ^2.3.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  hive_generator: ^1.1.3
+  build_runner: ^2.1.11
+  flutter_dotenv: ^5.1.0
+  flutter_riverpod: ^2.1.3
+  requests: ^4.7.0
+  speech_to_text: ^6.1.1
+  velocity_x: ^3.6.0
+flutter_native_splash:
+  color: "#FFFFFF"
+  color_dark: "#201c1c"
+  image: "assets/logo.png"
+  image_dark: "assets/logo.png"
+
+  android_12:
+    icon_background_color: "#FFFFFF"
+    image: "assets/logo.png"
+    icon_background_color_dark: "#201c1c"
+    image_dark: "assets/logo.png" 
+
+
+flutter:
+
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+    - assets/docs/
+    - assets/profiles/
+    - assets/
+
+ 
+  fonts:
+    - family: Baloo Da
+      fonts:
+        - asset: assets/fonts/BalooDa2-Bold.ttf
+        - asset: assets/fonts/BalooDa2-ExtraBold.ttf
+        - asset: assets/fonts/BalooDa2-Regular.ttf
+  
