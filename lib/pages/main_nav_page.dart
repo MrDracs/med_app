@@ -105,9 +105,9 @@ class _MainPageState extends State<MainPage> {
             // ),
             // Self-Help Features
             BottomNavigationBarItem(
-              icon: Icon(Ionicons.calendar_outline),
-              activeIcon: Icon(Ionicons.calendar),
-              label: "Features",
+              icon: Icon(Ionicons.pie_chart_outline),
+              activeIcon: Icon(Ionicons.pie_chart),
+              label: "Analytics",
             ),
             // profile & about
             BottomNavigationBarItem(

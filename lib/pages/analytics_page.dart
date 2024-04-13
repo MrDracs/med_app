@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:med_app/pages/heart_attack_predictor.dart';
 import 'package:med_app/pages/main_nav_page.dart';
 import 'package:med_app/widgets/graph.dart';
 import 'package:med_app/widgets/my_button.dart';
@@ -56,6 +57,20 @@ class _AnalyticsPageState extends State<AnalyticsPage> {
             walkingRating: walkingRating,
             sleepRating: sleepRating,
           ),
+          SizedBox(
+            height: 30,
+          ),
+          MyButton(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const HeartAttackPredictor(),
+                  ),
+                );
+              },
+              text: "Check Your Heart's Risk"),
+          SizedBox(height: 20),
           Text(
             "Contact Your Doctor",
             style: Theme.of(context).textTheme.titleLarge,
