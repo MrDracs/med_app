@@ -16,14 +16,14 @@ class DoctorModel {
 
 final List<DoctorModel> expertCounsellors = [
   DoctorModel(
-    name: "Olivia Anderson",
+    name: "Olivia",
     position: "Cognitive Psychologist",
     averageReview: 4,
     totalReviews: 200,
     profile: "assets/docs/doc1.png",
   ),
   DoctorModel(
-    name: "Benjamin Campbell",
+    name: "Benjamin",
     position: "Clinical Psychologist",
     averageReview: 3,
     totalReviews: 256,

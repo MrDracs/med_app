@@ -3,16 +3,16 @@ import 'package:ionicons/ionicons.dart';
 
 import '../data/psychologist_model.dart';
 
-class ExpertCounsellors extends StatelessWidget {
-  const ExpertCounsellors({Key? key}) : super(key: key);
+class PreferredDoctors extends StatelessWidget {
+  const PreferredDoctors({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
       children: List.generate(expertCounsellors.length, (index) {
-        return Padding(
-          padding: EdgeInsets.symmetric(
-              horizontal: MediaQuery.of(context).size.width / 30),
+        return Container(
+          margin: const EdgeInsets.symmetric(horizontal: 10),
           child: Column(
             children: [
               Container(
@@ -32,10 +32,14 @@ class ExpertCounsellors extends StatelessWidget {
                   Text(
                     "Dr. ${expertCounsellors[index].name}",
                     style: const TextStyle(
-                        fontSize: 16, fontWeight: FontWeight.bold),
+                        fontSize: 18, fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(height: 2),
-                  Text(expertCounsellors[index].position),
+                  Text(
+                    expertCounsellors[index].position,
+                    style: const TextStyle(
+                        fontSize: 14, fontWeight: FontWeight.w500),
+                  ),
                   const SizedBox(height: 16),
                 ],
               )

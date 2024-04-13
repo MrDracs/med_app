@@ -11,6 +11,7 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.5
   ionicons: ^0.2.2
+  fl_chart: ^0.61.0
   flutter_slidable: ^1.2.0
   hive: ^2.2.3
   google_fonts: ^4.0.4
@@ -18,7 +19,10 @@ dependencies:
   flutter_heatmap_calendar: ^1.0.5
   flutter_bloc: ^7.0.0
   equatable: ^2.0.0
+  twilio_flutter: ^0.0.9
   flutter_native_splash: ^2.3.3
+  get: ^4.6.5
+  geolocator: ^9.0.2
 
 dev_dependencies:
   flutter_test:
@@ -31,6 +35,7 @@ dev_dependencies:
   requests: ^4.7.0
   speech_to_text: ^6.1.1
   velocity_x: ^3.6.0
+  
 flutter_native_splash:
   color: "#FFFFFF"
   color_dark: "#201c1c"

@@ -16,9 +16,9 @@ class PTheme {
       primaryColorLight: Colors.white,
       indicatorColor: Colors.grey[100],
       // ignore: deprecated_member_use
-      selectedRowColor: const Color.fromRGBO(206, 33, 255, 1),
-      highlightColor: const Color.fromRGBO(206, 33, 255, 1),
-      shadowColor: const Color.fromRGBO(206, 33, 255, 1),
+      selectedRowColor: Color.fromARGB(255, 33, 170, 255),
+      highlightColor: Color.fromARGB(255, 33, 148, 255),
+      shadowColor: Color.fromARGB(255, 33, 118, 255),
       useMaterial3: true,
       colorScheme: ThemeData.light().colorScheme.copyWith(
             background: Colors.white,
@@ -26,7 +26,7 @@ class PTheme {
             onPrimaryContainer: Colors.white,
             primary: Colors.white,
             onPrimary: Colors.black,
-            secondary: const Color.fromARGB(255, 248, 216, 255),
+            secondary: Color.fromARGB(255, 216, 244, 255),
             onSecondary: Colors.black,
           ));
 
@@ -40,13 +40,13 @@ class PTheme {
         bodySmall: TextStyle(color: Colors.white),
       )).copyWith(
       brightness: Brightness.dark,
-      primaryColor: const Color.fromARGB(255, 167, 70, 180),
-      indicatorColor: const Color.fromARGB(255, 167, 70, 180),
+      primaryColor: Color.fromARGB(255, 70, 136, 180),
+      indicatorColor: Color.fromARGB(255, 70, 120, 180),
       // ignore: deprecated_member_use
       selectedRowColor: Colors.white,
       primaryColorDark: const Color.fromRGBO(32, 28, 28, 1),
-      highlightColor: const Color.fromARGB(255, 167, 70, 180),
-      shadowColor: const Color.fromARGB(255, 77, 57, 82),
+      highlightColor: Color.fromARGB(255, 54, 157, 225),
+      shadowColor: Color.fromARGB(255, 57, 70, 82),
       useMaterial3: true,
       colorScheme: ThemeData.dark().colorScheme.copyWith(
             background: const Color.fromARGB(255, 27, 27, 27),
@@ -54,7 +54,7 @@ class PTheme {
             onBackground: Colors.white,
             primary: Colors.black,
             onPrimary: Colors.white,
-            secondary: const Color.fromARGB(255, 77, 57, 82),
+            secondary: Color.fromARGB(255, 64, 90, 98),
             onSecondary: Colors.white,
           ));
 }

@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'bot/providers/active_theme_provider.dart';
-import 'pages/chat_screen.dart';
 import 'pages/main_nav_page.dart';
 import 'theme/theme.dart';
 
@@ -23,12 +22,12 @@ class MyApp extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final activeTheme = ref.watch(activeThemeProvider);
     return MaterialApp(
-      title: 'Psych.AI',
+      title: 'ChronicCareCompanion',
       debugShowCheckedModeBanner: false,
       theme: PTheme.lightTheme,
       darkTheme: PTheme.darkTheme,
       themeMode: activeTheme == Themes.dark ? ThemeMode.dark : ThemeMode.light,
-      home: MainPage(),
+      home: const MainPage(),
     );
   }
 }

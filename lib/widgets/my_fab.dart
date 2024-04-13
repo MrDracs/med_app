@@ -12,7 +12,7 @@ class MyFloatingActionButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return FloatingActionButton(
       foregroundColor: Colors.white,
-      backgroundColor: Colors.purple,
+      backgroundColor: Theme.of(context).colorScheme.primary,
       onPressed: onPressed,
       tooltip: "Click to add habit",
       child: const Icon(Icons.add),
